@@ -4,7 +4,7 @@ import time
 import random
 from matplotlib import pyplot as plt
 
-data = pd.read_csv('/home/jelly/Downloads/mnist_train.csv')
+data = pd.read_csv('data/mnist_train.csv')
 m, n = data.shape
 data = np.array(data)
 

@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import scuffedML
 
-data = pd.read_csv('/home/jelly/Downloads/mnist_train.csv')
+data = pd.read_csv('data/mnist_train.csv')
 m, n = data.shape
 data = np.array(data)
 
@@ -19,10 +19,10 @@ X_train = data_train[1:n]
 X_train = X_train / 255.
 _,m_train = X_train.shape
 
-W1 = np.loadtxt('W1.csv', delimiter=',')
-b1 = np.loadtxt('b1.csv', delimiter=',')
-W2 = np.loadtxt('W2.csv', delimiter=',')
-b2 = np.loadtxt('b2.csv', delimiter=',')
+W1 = np.loadtxt('ModelData/W1.csv', delimiter=',')
+b1 = np.loadtxt('ModelData/b1.csv', delimiter=',')
+W2 = np.loadtxt('ModelData/W2.csv', delimiter=',')
+b2 = np.loadtxt('ModelData/b2.csv', delimiter=',')
 
 b1 = b1.reshape(-1, 1)
 b2 = b2.reshape(-1, 1)
