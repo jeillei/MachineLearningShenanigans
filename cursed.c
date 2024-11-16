@@ -437,7 +437,7 @@ int main(void)
         dW2[0][i] *= 1/60000;
     }
     double** redevZ1 = leaky_relu_deriv(Z1, W1x, column);
-    double**
+    double** dZ1 = matrix_arithmetic(redevZ1, 
 
 
 
